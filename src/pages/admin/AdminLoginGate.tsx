@@ -3,6 +3,7 @@ import { Lock, ShieldAlert, KeyRound, LogOut } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useStore } from '../../context/StoreContext';
 import { BrandLogo } from '../../components/BrandLogo';
+import { fetchApiJson } from '../../lib/http';
 
 interface AdminStatusResponse {
   configured: boolean;
@@ -90,31 +91,35 @@ export const AdminLoginGate: React.FC<{ children: React.ReactNode }> = ({ childr
     setNotice('');
     setBusy(true);
     try {
-      const res = await fetch('/api/admin/login', {
+      const loginRes = await fetchApiJson<{
+        token?: string;
+        email?: string;
+        mustChangePassword?: boolean;
+        error?: string;
+      }>('/api/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
       });
-      const data = await res.json();
-      if (!res.ok) {
-        setError(data.error || 'Falha de autenticação administrativa.');
+      const data = loginRes.data;
+      if (!loginRes.ok || !data.token) {
+        setError(data.error || 'Falha de autenticação administrativa. Verifique suas credenciais.');
         await loadStatus();
       } else {
         setServerAdminSession({
           token: data.token,
-          email: data.email,
+          email: data.email || email,
           role: 'admin',
           mustChangePassword: Boolean(data.mustChangePassword),
         });
-        // Also try Firebase Email/Password sign-in if enabled in project
         try {
           await loginCustomerEmail(email, password);
         } catch {
-          // Google Auth can be linked below if Email/Password provider is disabled
+          // Firebase Auth optional link
         }
       }
-    } catch {
-      setError('Erro de conexão com o servidor de autenticação.');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Erro de conexão com o servidor de autenticação.');
     } finally {
       setBusy(false);
     }
