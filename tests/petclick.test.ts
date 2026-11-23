@@ -232,15 +232,15 @@ describe('PetClick Security & Backend API Integration', () => {
       expect(health.integrations.infinitePayPublicCheckout).toBe(true);
       expect(health.integrations.correiosPublicTable).toBe(true);
 
-      // Bootstrap admin claim
-      const bootRes = await fetch(`${baseUrl}/api/admin/bootstrap`, {
+      // Admin login with pre-configured default credentials
+      const loginRes = await fetch(`${baseUrl}/api/admin/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: 'admin@x.com', password: 'StrongPassword#2026' }),
+        body: JSON.stringify({ email: 'admin@x.com', password: 'admin4321' }),
       });
-      expect(bootRes.status).toBe(200);
-      const bootData = await bootRes.json();
-      expect(bootData.token).toBeTruthy();
+      expect(loginRes.status).toBe(200);
+      const loginData = await loginRes.json();
+      expect(loginData.token).toBeTruthy();
 
       // Progressive lockout after 3 invalid attempts
       for (let i = 0; i < 3; i++) {
