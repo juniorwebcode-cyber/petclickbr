@@ -1,0 +1,593 @@
+======================================================================
+CATÁLOGO DE PRODUTOS - NUPETHUB
+Fonte: https://www.nupethub.com/produtos
+Total de produtos extraídos: 82
+Data da extração: 23/11/2026
+======================================================================
+
+NOTA: O site (SPA construído com Lovable) não apresenta descrições
+detalhadas individuais dos produtos. Foi extraído o máximo disponível:
+- Nome completo do produto
+- Preço atual e preço original (quando em oferta/desconto)
+- URL da foto real do produto
+- Link do produto (quando disponível)
+
+======================================================================
+
+PRODUTO 01
+----------------------------------------
+Nome: Ração Natural Fresh Cães Adultos 10kg
+Preço: R$ 189,90  (de R$ 229,90)
+Foto: https://www.nupethub.com/assets/p-racao-caes-0eUanrGE.jpg
+Link: https://www.nupethub.com/produtos/racao-premium-caes-adultos-10kg
+
+PRODUTO 02
+----------------------------------------
+Nome: Bola Mordedora com Corda
+Preço: R$ 39,90  (de R$ 59,90)
+Foto: https://www.nupethub.com/assets/p-brinquedo-bola-C_z4kOJH.jpg
+Link: https://www.nupethub.com/produtos/brinquedo-bola-mordedor-corda
+
+PRODUTO 03
+----------------------------------------
+Nome: Petisco Osso Natural para Cães (pacote 6un)
+Preço: R$ 34,90
+Foto: https://www.nupethub.com/assets/p-petisco-caes-DJGfOvHA.jpg
+Link: https://www.nupethub.com/produtos/petisco-osso-natural-caes
+
+PRODUTO 04
+----------------------------------------
+Nome: Tapete Higiênico para Cães 30 unidades
+Preço: R$ 64,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1069418-800-800/Tapete-Higienico-MyHug-Tradicional.webp.webp?v=638784312226100000
+Link: https://www.nupethub.com/produtos/tapete-higienico-caes-30un
+
+PRODUTO 05
+----------------------------------------
+Nome: Ração Premium Gatos Salmão 3kg
+Preço: R$ 129,90  (de R$ 149,90)
+Foto: https://www.nupethub.com/assets/p-racao-gatos-TZteOYL1.jpg
+Link: https://www.nupethub.com/produtos/racao-premium-gatos-salmao-3kg
+
+PRODUTO 06
+----------------------------------------
+Nome: Arranhador Torre Zen para Gatos
+Preço: R$ 245,00
+Foto: https://www.nupethub.com/assets/p-arranhador-DfkToGUj.jpg
+Link: https://www.nupethub.com/produtos/arranhador-torre-zen
+
+PRODUTO 07
+----------------------------------------
+Nome: Areia Higiênica Premium Gatos 12kg
+Preço: R$ 78,50
+Foto: https://www.nupethub.com/assets/p-areia-gatos-Cz28O0dP.jpg
+Link: https://www.nupethub.com/produtos/areia-higienica-gatos-premium-12kg
+
+PRODUTO 08
+----------------------------------------
+Nome: Fonte de Água Automática AquaPure
+Preço: R$ 219,00  (de R$ 279,00)
+Foto: https://www.nupethub.com/assets/p-fonte-agua-CeKPQxLb.jpg
+Link: https://www.nupethub.com/produtos/fonte-agua-automatica
+
+PRODUTO 09
+----------------------------------------
+Nome: Mix de Sementes Premium para Aves 1kg
+Preço: R$ 29,90
+Foto: https://www.nupethub.com/assets/p-racao-aves-CAS-CPJL.jpg
+Link: https://www.nupethub.com/produtos/mix-sementes-aves-1kg
+
+PRODUTO 10
+----------------------------------------
+Nome: Gaiola Luxo para Aves Médias
+Preço: R$ 349,00  (de R$ 419,00)
+Foto: https://www.nupethub.com/assets/p-gaiola-aves-XmwPriDI.jpg
+Link: https://www.nupethub.com/produtos/gaiola-aves-luxo
+
+PRODUTO 11
+----------------------------------------
+Nome: Ração Premium para Hamster 500g
+Preço: R$ 27,90
+Foto: https://www.nupethub.com/assets/p-racao-roedores-BkY9bNS1.jpg
+Link: https://www.nupethub.com/produtos/racao-hamster-premium
+
+PRODUTO 12
+----------------------------------------
+Nome: Gaiola Aventura para Hamster
+Preço: R$ 259,00  (de R$ 319,00)
+Foto: https://www.nupethub.com/assets/p-gaiola-hamster-BP1gvqW-.jpg
+Link: https://www.nupethub.com/produtos/gaiola-hamster-aventura
+
+PRODUTO 13
+----------------------------------------
+Nome: Ração Flocos Peixes Tropicais 100g
+Preço: R$ 21,90
+Foto: https://www.nupethub.com/assets/p-racao-peixes-ik-aBzKZ.jpg
+Link: https://www.nupethub.com/produtos/racao-peixes-tropicais-100g
+
+PRODUTO 14
+----------------------------------------
+Nome: Aquário Kit Completo 20L com LED
+Preço: R$ 389,00  (de R$ 459,00)
+Foto: https://www.nupethub.com/assets/p-aquario-DFmyi_Gj.jpg
+Link: https://www.nupethub.com/produtos/aquario-kit-completo-20l
+
+PRODUTO 15
+----------------------------------------
+Nome: Royal Canin Mini Adultos 10kg
+Preço: R$ 329,90  (de R$ 369,90)
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1090462-800-800/Racao-Royal-Canin-Mini-Adult-Caes-Adultos.png.png?v=638978651071830000
+Link: https://www.nupethub.com/produtos/racao-royal-canin-mini-adultos-10kg
+
+PRODUTO 16
+----------------------------------------
+Nome: Premier Fórmula Cães Adultos Frango 15kg
+Preço: R$ 259,90  (de R$ 299,90)
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1082747-800-800/Racao-Premier-Formula-Caes-Adultos-Racas-Medias-Frango-15kg-frente.webp?v=638906168817870000
+Link: https://www.nupethub.com/produtos/racao-premier-formula-caes-adultos-frango-15kg
+
+PRODUTO 17
+----------------------------------------
+Nome: Golden Special Cães Adultos 15kg
+Preço: R$ 199,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1106741-800-800/racao-golden-special-para-caes-adultos-frango-e-carne-15-1.webp?v=639159071953570000
+Link: https://www.nupethub.com/produtos/racao-golden-special-caes-adultos-15kg
+
+PRODUTO 18
+----------------------------------------
+Nome: Pedigree Cães Adultos Carne 10kg
+Preço: R$ 149,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1058724-800-800/Racao-Pedigree-Caes-Adultos-Racas-Medias-e-Grandes-Carne-e-Vegetais-900g.png?v=638887169791230000
+Link: https://www.nupethub.com/produtos/racao-pedigree-caes-adultos-carne-10kg
+
+PRODUTO 19
+----------------------------------------
+Nome: Pedigree Dentastix Cães Médios
+Preço: R$ 24,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/776729-800-800/7896029052341_1_Pedigree_759180.jpg?v=638753911544800000
+Link: https://www.nupethub.com/produtos/petisco-pedigree-dentastix-caes-medios
+
+PRODUTO 20
+----------------------------------------
+Nome: Coleira Zee.Dog Neopro Laranja
+Preço: R$ 99,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1081829-800-800/Peitoral-H-Mesh-para-Caes-Toh-Fiji.webp?v=638893320223200000
+Link: https://www.nupethub.com/produtos/coleira-zeedog-neopro-laranja
+
+PRODUTO 21
+----------------------------------------
+Nome: Whiskas Gatos Adultos Carne 10,1kg
+Preço: R$ 189,90  (de R$ 219,90)
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1064797-800-800/0-WHISKAS-ADULTO-FRANGO-2kg.png?v=638690041436370000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 22
+----------------------------------------
+Nome: Sachê Whiskas Gatos Adultos Frango 85g
+Preço: R$ 3,99
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1064732-800-800/0-WHISKAS-ADULTO-CARNE-2kg.png?v=638838887956370000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 23
+----------------------------------------
+Nome: GranPlus Gatos Castrados Salmão 10kg
+Preço: R$ 239,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1049754-800-800/Castrado-Salmao-e-Arroz.png?v=639173256810530000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 24
+----------------------------------------
+Nome: Royal Canin Gatos Castrados 7,5kg
+Preço: R$ 399,90  (de R$ 449,90)
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1090098-800-800/Racao-Royal-Canin-Mini-Indoor-Adult-Caes-Adultos.png.png?v=638975337520400000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 25
+----------------------------------------
+Nome: Areia Higiênica Pipicat Classic 12kg
+Preço: R$ 39,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1022341-800-800/frente.jpg?v=639167784296830000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 26
+----------------------------------------
+Nome: Nutrópica Calopsita Natural 300g
+Preço: R$ 44,90
+Foto: https://www.nupethub.com/assets/p-racao-aves-CAS-CPJL.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 27
+----------------------------------------
+Nome: Nutrópica Hamster 300g
+Preço: R$ 39,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1085644-800-800/733440%20HAMSTER%20300G.webp?v=638954602330900000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 28
+----------------------------------------
+Nome: Tetra Color Peixes Ornamentais 100g
+Preço: R$ 54,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/177051-800-800/Color-Flakes-Tetra-20g.jpg?v=635936504639230000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 29
+----------------------------------------
+Nome: Hill's Science Diet Cães Adultos 12kg
+Preço: R$ 459,90  (de R$ 519,90)
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1096248-800-800/Racao-Hills-Science-Diet-Pedacos-Pequenos-Caes-Adultos-frente.webp?v=639058355255330000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 30
+----------------------------------------
+Nome: Premier Ambientes Internos Gatos 7,5kg
+Preço: R$ 279,90  (de R$ 319,90)
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1082753-800-800/Racao-Premier-Formula-Caes-Adultos-Racas-Pequenas-Frango-1kg-frente.webp?v=638906218514600000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 31
+----------------------------------------
+Nome: Bravecto Cães 10-20kg (1 comprimido)
+Preço: R$ 169,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1068329-800-800/Bravecto-Caes-comp-500mg-2.png?v=638756778186000000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 32
+----------------------------------------
+Nome: Coleira Seresto Cães Grandes
+Preço: R$ 269,90  (de R$ 319,90)
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1080746-800-800/Seresto-Maior-que-8.webp?v=638929321374700000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 33
+----------------------------------------
+Nome: Tapete Higiênico Petix 30 unidades
+Preço: R$ 89,90  (de R$ 109,90)
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1069418-800-800/Tapete-Higienico-MyHug-Tradicional.webp.webp?v=638784312226100000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 34
+----------------------------------------
+Nome: KONG Classic Médio
+Preço: R$ 119,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1063784-800-800/Brinquedo-Mordedor-Kong-Classic-1.png?v=638672035168170000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 35
+----------------------------------------
+Nome: Whiskas Sachês Sortidos 12 unidades
+Preço: R$ 39,90  (de R$ 47,90)
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1064732-800-800/0-WHISKAS-ADULTO-CARNE-2kg.png?v=638838887956370000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 36
+----------------------------------------
+Nome: Caixa de Areia Fechada Furacão Pet
+Preço: R$ 159,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/835567-800-800/Banheiro-Cat-Toalete-Furacao-Pet-Azul.jpg?v=637684342526470000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 37
+----------------------------------------
+Nome: Dreamies Petisco Gatos Frango 40g
+Preço: R$ 8,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1095478-800-800/Hero_Petisco%20Dreamies%20Frango%20para%20Gatos.webp?v=639033972183600000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 38
+----------------------------------------
+Nome: Megazoo Extrusada Papagaios 350g
+Preço: R$ 49,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/212072-800-800/7898401960398.jpg?v=638820635902470000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 39
+----------------------------------------
+Nome: Peitoral Zee.Dog H-Harness Neopro
+Preço: R$ 169,90  (de R$ 199,90)
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1081805-800-800/Peitoral-H-Mesh-para-Caes-Toh-Preto.webp?v=638893316875030000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 40
+----------------------------------------
+Nome: Cama Pet Nuvem Soft
+Preço: R$ 159,00
+Foto: https://www.nupethub.com/assets/p-cama-pet-gHTrXISd.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 41
+----------------------------------------
+Nome: Coleira de Couro Sunset
+Preço: R$ 89,90
+Foto: https://www.nupethub.com/assets/p-coleira-B-pSQmHh.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 42
+----------------------------------------
+Nome: Shampoo Hipoalergênico 500ml
+Preço: R$ 49,90
+Foto: https://www.nupethub.com/assets/p-shampoo-Bf-d5bYh.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 43
+----------------------------------------
+Nome: Guia Retrátil 5m até 25kg
+Preço: R$ 79,90  (de R$ 99,90)
+Foto: https://www.nupethub.com/assets/p-coleira-B-pSQmHh.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 44
+----------------------------------------
+Nome: Varinha com Pena Interativa
+Preço: R$ 24,90
+Foto: https://www.nupethub.com/assets/p-brinquedo-gatos-DhfM6Xaq.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 45
+----------------------------------------
+Nome: Caixa de Transporte Comfort
+Preço: R$ 189,00
+Foto: https://www.nupethub.com/assets/p-caixa-transporte-Dc9Rs6g7.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 46
+----------------------------------------
+Nome: Shampoo Suave para Gatos 300ml
+Preço: R$ 42,90
+Foto: https://www.nupethub.com/assets/p-shampoo-Bf-d5bYh.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 47
+----------------------------------------
+Nome: Bebedouro Automático para Aves 200ml
+Preço: R$ 19,90
+Foto: https://www.nupethub.com/assets/p-gaiola-aves-XmwPriDI.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 48
+----------------------------------------
+Nome: Balanço Colorido com Sininho
+Preço: R$ 22,50
+Foto: https://www.nupethub.com/assets/p-gaiola-aves-XmwPriDI.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 49
+----------------------------------------
+Nome: Farinhada Premium para Canários 500g
+Preço: R$ 34,90
+Foto: https://www.nupethub.com/assets/p-racao-aves-CAS-CPJL.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 50
+----------------------------------------
+Nome: Feno Premium para Coelhos e Porquinhos 1kg
+Preço: R$ 32,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1097752-800-800/Feno%20Premium%20Belas%20Aves%20e%20Roedores%20500g.webp?v=639078071120130000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 51
+----------------------------------------
+Nome: Casinha de Madeira para Roedores
+Preço: R$ 39,90
+Foto: https://www.nupethub.com/assets/p-gaiola-hamster-BP1gvqW-.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 52
+----------------------------------------
+Nome: Bebedouro para Roedores 250ml
+Preço: R$ 18,90
+Foto: https://www.nupethub.com/assets/p-gaiola-hamster-BP1gvqW-.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 53
+----------------------------------------
+Nome: Condicionador de Água para Aquário 100ml
+Preço: R$ 24,90
+Foto: https://www.nupethub.com/assets/p-racao-peixes-ik-aBzKZ.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 54
+----------------------------------------
+Nome: Substrato Cascalho Natural 1kg
+Preço: R$ 19,90
+Foto: https://www.nupethub.com/assets/p-aquario-DFmyi_Gj.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 55
+----------------------------------------
+Nome: Termostato com Aquecedor 50W
+Preço: R$ 89,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/179212-800-800/Termostato-Roxin-Ht-1900-220V-50W.jpg?v=638150842521530000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 56
+----------------------------------------
+Nome: Brinquedo Pet Games Recheável
+Preço: R$ 69,90
+Foto: https://www.nupethub.com/assets/p-brinquedo-bola-C_z4kOJH.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 57
+----------------------------------------
+Nome: Shampoo Sanol Dog Neutro 500ml
+Preço: R$ 32,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1068522-800-800/Shampoo-Neutro-Caes-e-Gatos-Sanol.png.png?v=638759955788770000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 58
+----------------------------------------
+Nome: Areia Viva Verde Gatos 4kg
+Preço: R$ 59,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1064231-800-800/Areia-Higienica-Biodegradavel-Graos-Grossos-Viva-Verde-4kg-1.png?v=638681476051100000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 59
+----------------------------------------
+Nome: Varinha Chalesco para Gatos
+Preço: R$ 19,90
+Foto: https://www.nupethub.com/assets/p-brinquedo-gatos-DhfM6Xaq.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 60
+----------------------------------------
+Nome: Alcon Club Periquito 500g
+Preço: R$ 24,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/207061-800-800/Racao-para-Canario-Club-Alcon.jpg?v=638820635158600000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 61
+----------------------------------------
+Nome: Feno Alcon Club Roedores 500g
+Preço: R$ 29,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1097752-800-800/Feno%20Premium%20Belas%20Aves%20e%20Roedores%20500g.webp?v=639078071120130000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 62
+----------------------------------------
+Nome: Alcon Basic Peixes 50g
+Preço: R$ 18,90
+Foto: https://www.nupethub.com/assets/p-racao-peixes-ik-aBzKZ.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 63
+----------------------------------------
+Nome: N&D Ancestral Grain Cães Frango e Romã 12kg
+Preço: R$ 549,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1097144-800-800/racao-nd-ancestral-grain-caes-adulto-maxi-frango-1.webp?v=639071894891970000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 64
+----------------------------------------
+Nome: Magnus Todo Dia Cães Adultos 15kg
+Preço: R$ 119,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1051550-800-800/Racao-Magnus-Todo-Dia-Caes-Adultos-Carne-Frente.png?v=638786765666970000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 65
+----------------------------------------
+Nome: Frontline Spray 250ml
+Preço: R$ 139,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1068384-800-800/Bravecto-Caes-Transdermal-500mg-2.png?v=638756780319400000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 66
+----------------------------------------
+Nome: Vermífugo Drontal Plus Cães
+Preço: R$ 24,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1077319-800-800/Drontal_Plus-Sabor_35kg_1.webp?v=638863018252400000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 67
+----------------------------------------
+Nome: Bifinho Spin Pet Carne 300g
+Preço: R$ 12,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/725870-800-800/Petisco-Bifinho-de-Carne-para-Caes-Bilisko-65G.jpg?v=638290082539330000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 68
+----------------------------------------
+Nome: Areia Pipicat Clumping 4kg
+Preço: R$ 24,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1022341-800-800/frente.jpg?v=639167784296830000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 69
+----------------------------------------
+Nome: Arranhador Pet Society Poste 50cm
+Preço: R$ 89,90
+Foto: https://www.nupethub.com/assets/p-arranhador-DfkToGUj.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 70
+----------------------------------------
+Nome: Equilíbrio Gatos Castrados 7,5kg
+Preço: R$ 219,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1107270-800-800/Racao%20Guabi%20Natural%20Grain%20Free%20Gatos%20Castrados%20Salmao%20e%20Lentilha%201.webp?v=639160968501000000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 71
+----------------------------------------
+Nome: Casinha de Madeira Cães Médios
+Preço: R$ 449,90
+Foto: https://www.nupethub.com/assets/p-cama-pet-gHTrXISd.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 72
+----------------------------------------
+Nome: Fonte Aqualimp Cats 2L
+Preço: R$ 189,90
+Foto: https://www.nupethub.com/assets/p-fonte-agua-CeKPQxLb.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 73
+----------------------------------------
+Nome: Pet Clean Shampoo Gatos 500ml
+Preço: R$ 28,90
+Foto: https://www.nupethub.com/assets/p-shampoo-Bf-d5bYh.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 74
+----------------------------------------
+Nome: Gaiola Alcon Club Calopsita
+Preço: R$ 469,90
+Foto: https://www.nupethub.com/assets/p-gaiola-aves-XmwPriDI.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 75
+----------------------------------------
+Nome: Ninho de Côco para Canários
+Preço: R$ 19,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/819500-800-800/7898274760323_edt.jpg?v=638134508156470000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 76
+----------------------------------------
+Nome: Supra Coelho 500g
+Preço: R$ 22,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1062386-800-800/Racao-Funny-Bunny-500g.png?v=638760170171100000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 77
+----------------------------------------
+Nome: Roda Silenciosa para Hamster 20cm
+Preço: R$ 49,90
+Foto: https://www.nupethub.com/assets/p-gaiola-hamster-BP1gvqW-.jpg
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 78
+----------------------------------------
+Nome: Termostato Roxin com Aquecedor 100W
+Preço: R$ 129,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/179212-800-800/Termostato-Roxin-Ht-1900-220V-50W.jpg?v=638150842521530000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 79
+----------------------------------------
+Nome: Filtro Externo JAD 103 300L/h
+Preço: R$ 109,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/200552-800-800/Filtro-Externo-FE-100-127V-789828144188-8-FE-100-220V-789828144192-5.jpg?v=638128379226370000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 80
+----------------------------------------
+Nome: Aquário Betta Vidro 3L
+Preço: R$ 79,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1012355-800-800/7899526805168-Edt.jpg?v=638137853244000000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 81
+----------------------------------------
+Nome: Omega Sea Betta 20g
+Preço: R$ 39,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/845709-800-800/606529237332.jpg?v=637693088064100000
+Link: https://www.nupethub.com/produtos
+
+PRODUTO 82
+----------------------------------------
+Nome: Guia Zee.Dog Air Mesh Laranja
+Preço: R$ 89,90
+Foto: https://cobasi.vteximg.com.br/arquivos/ids/1081829-800-800/Peitoral-H-Mesh-para-Caes-Toh-Fiji.webp?v=638893320223200000
+Link: https://www.nupethub.com/produtos
+
+======================================================================
+Fim do catálogo - 82 produtos extraídos com sucesso
+======================================================================

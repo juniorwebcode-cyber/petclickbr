@@ -1,0 +1,34 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isStaff() {
+      return isSignedIn() && (
+        request.auth.token.email == 'juniorwebcode@gmail.com' &&
+        request.auth.token.email_verified == true
+      );
+    }
+
+    match /products/{allPaths=**} {
+      allow read: if true;
+      allow write: if isStaff()
+        && request.resource.size < 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+
+    match /branding/{allPaths=**} {
+      allow read: if true;
+      allow write: if isStaff()
+        && request.resource.size < 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

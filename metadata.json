@@ -1,0 +1,6 @@
+{
+  "name": "PetClick",
+  "description": "Tudo para seu pet em um só lugar! E-commerce petshop completo com dropshipping, PDV, ERP, Firebase e InfinitePay.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,474 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "Catalog product sold on PetClick storefront and PDV.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "sku": { "type": "string", "maxLength": 64 },
+        "barcode": { "type": "string", "maxLength": 64 },
+        "name": { "type": "string", "minLength": 2, "maxLength": 180 },
+        "slug": { "type": "string", "maxLength": 200 },
+        "description": { "type": "string", "maxLength": 5000 },
+        "brand": { "type": "string", "maxLength": 100 },
+        "categoryId": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "categoryName": { "type": "string", "maxLength": 100 },
+        "supplierId": { "type": "string", "maxLength": 128 },
+        "sourceType": { "type": "string", "enum": ["own_stock", "dropshipping", "hybrid"] },
+        "costPrice": { "type": "number" },
+        "markupPercent": { "type": "number" },
+        "price": { "type": "number" },
+        "promoPrice": { "type": "number" },
+        "manualPriceLocked": { "type": "boolean" },
+        "stockOwn": { "type": "number" },
+        "stockSupplier": { "type": "number" },
+        "stockReserved": { "type": "number" },
+        "minStockAlert": { "type": "number" },
+        "available": { "type": "boolean" },
+        "published": { "type": "boolean" },
+        "featured": { "type": "boolean" },
+        "bestSeller": { "type": "boolean" },
+        "weightKg": { "type": "number" },
+        "heightCm": { "type": "number" },
+        "widthCm": { "type": "number" },
+        "lengthCm": { "type": "number" },
+        "images": { "type": "array" },
+        "variants": { "type": "array" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "categoryId", "price", "costPrice", "published", "available", "createdAt", "updatedAt"]
+    },
+    "Category": {
+      "title": "Category",
+      "description": "Product category with default margin and display image.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "name": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "slug": { "type": "string", "maxLength": 100 },
+        "description": { "type": "string", "maxLength": 500 },
+        "imageUrl": { "type": "string", "maxLength": 1000 },
+        "defaultMarginPercent": { "type": "number" },
+        "active": { "type": "boolean" },
+        "sortOrder": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "slug", "active", "createdAt", "updatedAt"]
+    },
+    "Supplier": {
+      "title": "Supplier",
+      "description": "Authorized supplier or dropshipping connector.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "name": { "type": "string", "minLength": 2, "maxLength": 120 },
+        "apiUrl": { "type": "string", "maxLength": 500 },
+        "connectorType": { "type": "string", "enum": ["rest_api", "csv", "xml", "authorized_catalog"] },
+        "connectionStatus": { "type": "string", "enum": ["not_configured", "connected", "error", "disabled"] },
+        "syncFrequency": { "type": "string", "enum": ["manual", "hourly", "daily", "weekly"] },
+        "defaultMarginPercent": { "type": "number" },
+        "surchargePercent": { "type": "number" },
+        "stockPolicy": { "type": "string", "maxLength": 500 },
+        "shippingPolicy": { "type": "string", "maxLength": 500 },
+        "lastSyncAt": { "type": "string", "format": "date-time" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "connectorType", "connectionStatus", "createdAt", "updatedAt"]
+    },
+    "SupplierProduct": {
+      "title": "SupplierProduct",
+      "description": "Imported raw supplier catalog item linked to PetClick products.",
+      "type": "object",
+      "properties": {
+        "supplierId": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "externalSku": { "type": "string", "maxLength": 100 },
+        "linkedProductId": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 180 },
+        "supplierCost": { "type": "number" },
+        "supplierStock": { "type": "number" },
+        "sourceOrigin": { "type": "string", "maxLength": 120 },
+        "lastSyncedAt": { "type": "string", "format": "date-time" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["supplierId", "externalSku", "name", "supplierCost", "supplierStock", "createdAt", "updatedAt"]
+    },
+    "Customer": {
+      "title": "Customer",
+      "description": "Customer profile for e-commerce and PDV.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "minLength": 2, "maxLength": 140 },
+        "email": { "type": "string", "maxLength": 180 },
+        "phone": { "type": "string", "maxLength": 30 },
+        "cpf": { "type": "string", "maxLength": 20 },
+        "cep": { "type": "string", "maxLength": 15 },
+        "street": { "type": "string", "maxLength": 200 },
+        "number": { "type": "string", "maxLength": 30 },
+        "complement": { "type": "string", "maxLength": 100 },
+        "neighborhood": { "type": "string", "maxLength": 100 },
+        "city": { "type": "string", "maxLength": 100 },
+        "state": { "type": "string", "maxLength": 10 },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "email", "createdAt", "updatedAt"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "E-commerce order with InfinitePay status and shipping details.",
+      "type": "object",
+      "properties": {
+        "orderNsu": { "type": "string", "maxLength": 128 },
+        "customerId": { "type": "string", "maxLength": 128 },
+        "customerName": { "type": "string", "maxLength": 140 },
+        "customerEmail": { "type": "string", "maxLength": 180 },
+        "status": { "type": "string", "enum": ["pending_payment", "paid", "preparing", "shipped", "delivered", "canceled", "refunded", "payment_failed"] },
+        "paymentMethod": { "type": "string", "maxLength": 40 },
+        "subtotal": { "type": "number" },
+        "discountTotal": { "type": "number" },
+        "shippingCost": { "type": "number" },
+        "total": { "type": "number" },
+        "checkoutUrl": { "type": "string", "maxLength": 1000 },
+        "transactionNsu": { "type": "string", "maxLength": 128 },
+        "slug": { "type": "string", "maxLength": 128 },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["orderNsu", "customerId", "status", "subtotal", "shippingCost", "total", "createdAt", "updatedAt"]
+    },
+    "OrderItem": {
+      "title": "OrderItem",
+      "description": "Line item belonging to an order.",
+      "type": "object",
+      "properties": {
+        "orderId": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "customerId": { "type": "string", "maxLength": 128 },
+        "productId": { "type": "string", "maxLength": 128 },
+        "productName": { "type": "string", "maxLength": 180 },
+        "variantLabel": { "type": "string", "maxLength": 80 },
+        "quantity": { "type": "number" },
+        "unitPrice": { "type": "number" },
+        "unitCost": { "type": "number" },
+        "totalPrice": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["orderId", "customerId", "productId", "quantity", "unitPrice", "totalPrice", "createdAt"]
+    },
+    "Inventory": {
+      "title": "Inventory",
+      "description": "Stock summary separating own stock, supplier stock, and reserved stock.",
+      "type": "object",
+      "properties": {
+        "productId": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "stockOwn": { "type": "number" },
+        "stockSupplier": { "type": "number" },
+        "stockReserved": { "type": "number" },
+        "minStockAlert": { "type": "number" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["productId", "stockOwn", "stockSupplier", "stockReserved", "updatedAt"]
+    },
+    "InventoryMovement": {
+      "title": "InventoryMovement",
+      "description": "Immutable inventory ledger movement.",
+      "type": "object",
+      "properties": {
+        "productId": { "type": "string", "maxLength": 128 },
+        "productName": { "type": "string", "maxLength": 180 },
+        "type": { "type": "string", "enum": ["in", "out", "reserve", "cancel", "return", "manual_adjust", "supplier_sync"] },
+        "stockBucket": { "type": "string", "enum": ["own", "supplier", "reserved"] },
+        "quantityDelta": { "type": "number" },
+        "reason": { "type": "string", "maxLength": 300 },
+        "actorUid": { "type": "string", "maxLength": 128 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["productId", "type", "stockBucket", "quantityDelta", "actorUid", "createdAt"]
+    },
+    "Sale": {
+      "title": "Sale",
+      "description": "In-person PDV sale record.",
+      "type": "object",
+      "properties": {
+        "posSessionId": { "type": "string", "maxLength": 128 },
+        "operatorUid": { "type": "string", "maxLength": 128 },
+        "customerId": { "type": "string", "maxLength": 128 },
+        "customerName": { "type": "string", "maxLength": 140 },
+        "paymentMethod": { "type": "string", "enum": ["cash", "pix", "card"] },
+        "subtotal": { "type": "number" },
+        "discount": { "type": "number" },
+        "total": { "type": "number" },
+        "amountPaid": { "type": "number" },
+        "changeGiven": { "type": "number" },
+        "status": { "type": "string", "enum": ["completed", "canceled", "returned"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["posSessionId", "operatorUid", "paymentMethod", "total", "status", "createdAt", "updatedAt"]
+    },
+    "PosSession": {
+      "title": "PosSession",
+      "description": "Cash register opening and closing session.",
+      "type": "object",
+      "properties": {
+        "operatorUid": { "type": "string", "maxLength": 128 },
+        "operatorName": { "type": "string", "maxLength": 120 },
+        "status": { "type": "string", "enum": ["open", "closed"] },
+        "openingBalance": { "type": "number" },
+        "cashTotal": { "type": "number" },
+        "pixTotal": { "type": "number" },
+        "cardTotal": { "type": "number" },
+        "withdrawals": { "type": "number" },
+        "reinforcements": { "type": "number" },
+        "countedClosingBalance": { "type": "number" },
+        "cashDifference": { "type": "number" },
+        "openedAt": { "type": "string", "format": "date-time" },
+        "closedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["operatorUid", "status", "openingBalance", "openedAt"]
+    },
+    "CashTransaction": {
+      "title": "CashTransaction",
+      "description": "Cash drawer entry, withdrawal (sangria), or reinforcement (reforço).",
+      "type": "object",
+      "properties": {
+        "posSessionId": { "type": "string", "maxLength": 128 },
+        "type": { "type": "string", "enum": ["in", "out", "sangria", "reforco"] },
+        "paymentMethod": { "type": "string", "enum": ["cash", "pix", "card"] },
+        "amount": { "type": "number" },
+        "description": { "type": "string", "maxLength": 300 },
+        "operatorUid": { "type": "string", "maxLength": 128 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["posSessionId", "type", "amount", "operatorUid", "createdAt"]
+    },
+    "Expense": {
+      "title": "Expense",
+      "description": "Operating or variable business expense.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 160 },
+        "category": { "type": "string", "maxLength": 80 },
+        "amount": { "type": "number" },
+        "dueDate": { "type": "string", "maxLength": 40 },
+        "paid": { "type": "boolean" },
+        "notes": { "type": "string", "maxLength": 500 },
+        "createdBy": { "type": "string", "maxLength": 128 },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "category", "amount", "paid", "createdBy", "createdAt", "updatedAt"]
+    },
+    "Payment": {
+      "title": "Payment",
+      "description": "Verified payment record from InfinitePay or PDV.",
+      "type": "object",
+      "properties": {
+        "orderId": { "type": "string", "maxLength": 128 },
+        "orderNsu": { "type": "string", "maxLength": 128 },
+        "transactionNsu": { "type": "string", "maxLength": 128 },
+        "provider": { "type": "string", "enum": ["infinitepay", "pdv_cash", "pdv_pix", "pdv_card"] },
+        "method": { "type": "string", "maxLength": 40 },
+        "amountCents": { "type": "number" },
+        "feeCents": { "type": "number" },
+        "status": { "type": "string", "enum": ["pending", "paid", "canceled", "refunded", "failed"] },
+        "verifiedByApi": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["orderId", "provider", "amountCents", "status", "verifiedByApi", "createdAt", "updatedAt"]
+    },
+    "ShippingQuote": {
+      "title": "ShippingQuote",
+      "description": "Shipping calculation audit record.",
+      "type": "object",
+      "properties": {
+        "originCep": { "type": "string", "maxLength": 12 },
+        "destinationCep": { "type": "string", "maxLength": 12 },
+        "method": { "type": "string", "maxLength": 60 },
+        "price": { "type": "number" },
+        "estimatedDays": { "type": "number" },
+        "source": { "type": "string", "maxLength": 60 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["destinationCep", "method", "price", "source", "createdAt"]
+    },
+    "ShippingLabel": {
+      "title": "ShippingLabel",
+      "description": "Order shipping dispatch and tracking label.",
+      "type": "object",
+      "properties": {
+        "orderId": { "type": "string", "maxLength": 128 },
+        "carrier": { "type": "string", "maxLength": 80 },
+        "trackingCode": { "type": "string", "maxLength": 80 },
+        "status": { "type": "string", "enum": ["pending", "generated", "posted", "delivered"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["orderId", "carrier", "status", "createdAt", "updatedAt"]
+    },
+    "Coupon": {
+      "title": "Coupon",
+      "description": "Discount coupon code.",
+      "type": "object",
+      "properties": {
+        "code": { "type": "string", "maxLength": 40 },
+        "discountType": { "type": "string", "enum": ["percent", "fixed"] },
+        "discountValue": { "type": "number" },
+        "minOrderValue": { "type": "number" },
+        "maxUses": { "type": "number" },
+        "usedCount": { "type": "number" },
+        "active": { "type": "boolean" },
+        "expiresAt": { "type": "string", "format": "date-time" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["code", "discountType", "discountValue", "active", "createdAt", "updatedAt"]
+    },
+    "Promotion": {
+      "title": "Promotion",
+      "description": "Storefront promotional campaign.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 140 },
+        "description": { "type": "string", "maxLength": 500 },
+        "discountPercent": { "type": "number" },
+        "categoryId": { "type": "string", "maxLength": 128 },
+        "active": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "discountPercent", "active", "createdAt", "updatedAt"]
+    },
+    "Review": {
+      "title": "Review",
+      "description": "Customer product review.",
+      "type": "object",
+      "properties": {
+        "productId": { "type": "string", "maxLength": 128 },
+        "customerId": { "type": "string", "maxLength": 128 },
+        "customerName": { "type": "string", "maxLength": 120 },
+        "rating": { "type": "number" },
+        "comment": { "type": "string", "maxLength": 1000 },
+        "approved": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["productId", "customerId", "customerName", "rating", "comment", "approved", "createdAt"]
+    },
+    "Setting": {
+      "title": "Setting",
+      "description": "Store configuration document.",
+      "type": "object",
+      "properties": {
+        "storeName": { "type": "string", "maxLength": 120 },
+        "slogan": { "type": "string", "maxLength": 200 },
+        "whatsapp": { "type": "string", "maxLength": 30 },
+        "email": { "type": "string", "maxLength": 180 },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["updatedAt"]
+    },
+    "User": {
+      "title": "User",
+      "description": "Authenticated user profile with role and security state.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 140 },
+        "email": { "type": "string", "maxLength": 180 },
+        "role": { "type": "string", "enum": ["customer", "admin", "manager", "cashier", "stockist"] },
+        "mustChangePassword": { "type": "boolean" },
+        "active": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role", "createdAt", "updatedAt"]
+    },
+    "AdminRecord": {
+      "title": "AdminRecord",
+      "description": "Server/owner-managed RBAC staff registry.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "email": { "type": "string", "maxLength": 180 },
+        "role": { "type": "string", "enum": ["admin", "manager", "cashier", "stockist"] },
+        "active": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role", "active", "createdAt"]
+    },
+    "AuditLog": {
+      "title": "AuditLog",
+      "description": "Immutable security and operational audit event.",
+      "type": "object",
+      "properties": {
+        "actorUid": { "type": "string", "maxLength": 128 },
+        "actorEmail": { "type": "string", "maxLength": 180 },
+        "action": { "type": "string", "maxLength": 120 },
+        "module": { "type": "string", "maxLength": 80 },
+        "details": { "type": "string", "maxLength": 1000 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["actorUid", "action", "module", "createdAt"]
+    },
+    "Report": {
+      "title": "Report",
+      "description": "Generated business report snapshot.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 160 },
+        "reportType": { "type": "string", "maxLength": 80 },
+        "periodStart": { "type": "string", "maxLength": 40 },
+        "periodEnd": { "type": "string", "maxLength": 40 },
+        "generatedBy": { "type": "string", "maxLength": 128 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "reportType", "generatedBy", "createdAt"]
+    },
+    "Integration": {
+      "title": "Integration",
+      "description": "Integration configuration status (InfinitePay, Correios, CEP, Suppliers).",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "maxLength": 100 },
+        "provider": { "type": "string", "maxLength": 80 },
+        "status": { "type": "string", "enum": ["configured", "not_configured", "error"] },
+        "handle": { "type": "string", "maxLength": 120 },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "provider", "status", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/products/{productId}": { "schema": { "$ref": "#/entities/Product" }, "description": "Catalog products" },
+    "/categories/{categoryId}": { "schema": { "$ref": "#/entities/Category" }, "description": "Product categories" },
+    "/suppliers/{supplierId}": { "schema": { "$ref": "#/entities/Supplier" }, "description": "Suppliers and dropshipping connectors" },
+    "/supplierProducts/{supplierProductId}": { "schema": { "$ref": "#/entities/SupplierProduct" }, "description": "Supplier imported product records" },
+    "/customers/{customerId}": { "schema": { "$ref": "#/entities/Customer" }, "description": "Customer profiles with PII" },
+    "/orders/{orderId}": { "schema": { "$ref": "#/entities/Order" }, "description": "Customer e-commerce orders" },
+    "/orderItems/{orderItemId}": { "schema": { "$ref": "#/entities/OrderItem" }, "description": "Order line items" },
+    "/inventory/{inventoryId}": { "schema": { "$ref": "#/entities/Inventory" }, "description": "Product inventory breakdown" },
+    "/inventoryMovements/{movementId}": { "schema": { "$ref": "#/entities/InventoryMovement" }, "description": "Inventory audit movements" },
+    "/sales/{saleId}": { "schema": { "$ref": "#/entities/Sale" }, "description": "PDV point-of-sale transactions" },
+    "/posSessions/{sessionId}": { "schema": { "$ref": "#/entities/PosSession" }, "description": "PDV cash register sessions" },
+    "/cashTransactions/{transactionId}": { "schema": { "$ref": "#/entities/CashTransaction" }, "description": "Cash register movements" },
+    "/expenses/{expenseId}": { "schema": { "$ref": "#/entities/Expense" }, "description": "Business expenses" },
+    "/payments/{paymentId}": { "schema": { "$ref": "#/entities/Payment" }, "description": "Verified payments ledger" },
+    "/shippingQuotes/{quoteId}": { "schema": { "$ref": "#/entities/ShippingQuote" }, "description": "Shipping quote records" },
+    "/shippingLabels/{labelId}": { "schema": { "$ref": "#/entities/ShippingLabel" }, "description": "Shipping dispatch labels" },
+    "/coupons/{couponId}": { "schema": { "$ref": "#/entities/Coupon" }, "description": "Discount coupons" },
+    "/promotions/{promotionId}": { "schema": { "$ref": "#/entities/Promotion" }, "description": "Store promotions" },
+    "/reviews/{reviewId}": { "schema": { "$ref": "#/entities/Review" }, "description": "Product customer reviews" },
+    "/settings/{settingId}": { "schema": { "$ref": "#/entities/Setting" }, "description": "Storefront, shipping, and general settings" },
+    "/users/{userId}": { "schema": { "$ref": "#/entities/User" }, "description": "User accounts and roles" },
+    "/admins/{adminId}": { "schema": { "$ref": "#/entities/AdminRecord" }, "description": "Staff/Admin RBAC registry" },
+    "/auditLogs/{logId}": { "schema": { "$ref": "#/entities/AuditLog" }, "description": "Immutable security audit logs" },
+    "/reports/{reportId}": { "schema": { "$ref": "#/entities/Report" }, "description": "Saved report snapshots" },
+    "/integrations/{integrationId}": { "schema": { "$ref": "#/entities/Integration" }, "description": "External API integration status" }
+  }
+}
