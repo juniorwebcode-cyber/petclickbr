@@ -1,0 +1,167 @@
+import type { Category, ShippingSettings, StorefrontSettings } from '../types/petclick';
+
+export const PETCLICK_LOGO_REMOTE_URL =
+  'https://i.postimg.cc/CLCbPnvj/Logo-Pet-Click-Alegria-para-Pets.png';
+
+export const PETCLICK_IMAGES = {
+  logo: '/assets/images/logo-petclick.png',
+  heroBanner: '/assets/images/petclick_niche_hero_1795452128226.jpg',
+  dogNutrition: '/assets/images/petclick_dog_nutrition_1795448307002.jpg',
+  catAccessories: '/assets/images/petclick_cat_accessories_1795448305897.jpg',
+  toysBundle: '/assets/images/petclick_toys_bundle_1795448305805.jpg',
+  hygieneGrooming: '/assets/images/petclick_hygiene_grooming_1795448305609.jpg',
+  assistantAvatar: '/assets/images/petclick_assistant_avatar_1795452856092.jpg',
+};
+
+export const DEFAULT_STOREFRONT_SETTINGS: StorefrontSettings = {
+  storeName: 'PetClick',
+  slogan: 'Tudo para seu pet em um só lugar!',
+  logoUrl: PETCLICK_IMAGES.logo,
+  primaryColor: '#14532D',
+  accentColor: '#EA580C',
+  heroTitle: 'Cuidado completo, nutrição natural e conforto para seu melhor amigo.',
+  heroSubtitle:
+    'Rações selecionadas, brinquedos resistentes, caminhas confortáveis e itens de higiene com entrega rápida para todo o Brasil.',
+  heroCtaText: 'Explorar catálogo',
+  heroBannerUrl: PETCLICK_IMAGES.heroBanner,
+  whatsapp: '5511999999999',
+  email: 'contato@petclick.com.br',
+  address: 'SALVADOR - BAHIA',
+  instagramUrl: '',
+  facebookUrl: '',
+  businessHours: 'Segunda a Sábado, das 08h30 às 19h00',
+  announcementText: 'Frete grátis em compras a partir de R$ 249,00 conforme região e modalidade.',
+  maintenanceMode: false,
+  shippingPolicyText:
+    'Os pedidos são despachados após a confirmação do pagamento. Produtos em estoque próprio seguem no mesmo dia útil para pedidos confirmados até 14h. Itens sob encomenda/fornecedor informam o prazo específico na página do produto.',
+  privacyPolicyText:
+    'A PetClick trata os dados pessoais em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018). Utilizamos seus dados exclusivamente para processamento de pedidos, emissão fiscal, entrega e atendimento.',
+  termsText:
+    'Ao comprar na PetClick, o cliente concorda com os termos de fornecimento, disponibilidade verificada em tempo real e condições de pagamento processadas com segurança via InfinitePay.',
+  returnsPolicyText:
+    'Conforme o Código de Defesa do Consumidor (art. 49), você pode solicitar troca ou devolução por arrependimento em até 7 dias corridos após o recebimento, com produto lacrado e embalagem original.',
+  seoTitle: 'PetClick — Tudo para seu pet em um só lugar!',
+  seoDescription:
+    'Loja virtual PetClick: alimentação, brinquedos, caminhas, higiene e acessórios para cães e gatos.',
+  footerText: '© 2026 PetClick. Todos os direitos reservados.',
+  defaultMarginPercent: 60,
+  roundingMode: 'cents_90',
+  paymentFeePercent: 3.19,
+};
+
+export const DEFAULT_SHIPPING_SETTINGS: ShippingSettings = {
+  originCep: '40010000',
+  fixedShippingEnabled: true,
+  fixedShippingPrice: 19.9,
+  fixedShippingDays: 5,
+  freeShippingEnabled: true,
+  freeShippingMinOrder: 249,
+  pickupEnabled: true,
+  pickupAddress: 'SALVADOR - BAHIA (Retirada no balcão)',
+  manualQuoteEnabled: false,
+  manualQuoteNote: 'Cotação personalizada sob consulta pelo WhatsApp oficial da loja.',
+  assuredInstallments: 3,
+};
+
+export const STOREFRONT_CATEGORIES_BLUEPRINT: Omit<Category, 'createdAt' | 'updatedAt'>[] = [
+  {
+    id: 'caes',
+    name: 'Cães',
+    slug: 'caes',
+    description: 'Rações, antipulgas, vermífugos, passeio e bem-estar para cães.',
+    imageUrl: PETCLICK_IMAGES.dogNutrition,
+    defaultMarginPercent: 55,
+    active: true,
+    sortOrder: 1,
+  },
+  {
+    id: 'gatos',
+    name: 'Gatos',
+    slug: 'gatos',
+    description: 'Rações, sachês, petiscos e cuidados especiais para felinos.',
+    imageUrl: PETCLICK_IMAGES.catAccessories,
+    defaultMarginPercent: 60,
+    active: true,
+    sortOrder: 2,
+  },
+  {
+    id: 'alimentacao',
+    name: 'Alimentação',
+    slug: 'alimentacao',
+    description: 'Rações secas, úmidas, petiscos naturais, sementes e fenos.',
+    imageUrl: PETCLICK_IMAGES.dogNutrition,
+    defaultMarginPercent: 45,
+    active: true,
+    sortOrder: 3,
+  },
+  {
+    id: 'brinquedos',
+    name: 'Brinquedos',
+    slug: 'brinquedos',
+    description: 'Enriquecimento ambiental, mordedores, bolas e varinhas.',
+    imageUrl: PETCLICK_IMAGES.toysBundle,
+    defaultMarginPercent: 80,
+    active: true,
+    sortOrder: 4,
+  },
+  {
+    id: 'caminhas',
+    name: 'Caminhas',
+    slug: 'caminhas',
+    description: 'Camas laváveis, casinhas de madeira e caixas de transporte.',
+    imageUrl: PETCLICK_IMAGES.catAccessories,
+    defaultMarginPercent: 65,
+    active: true,
+    sortOrder: 5,
+  },
+  {
+    id: 'higiene',
+    name: 'Higiene',
+    slug: 'higiene',
+    description: 'Tapetes higiênicos, areias, banheiros e shampoos veterinários.',
+    imageUrl: PETCLICK_IMAGES.hygieneGrooming,
+    defaultMarginPercent: 70,
+    active: true,
+    sortOrder: 6,
+  },
+  {
+    id: 'acessorios',
+    name: 'Acessórios',
+    slug: 'acessorios',
+    description: 'Coleiras, peitorais, guias, fontes automáticas e arranhadores.',
+    imageUrl: PETCLICK_IMAGES.toysBundle,
+    defaultMarginPercent: 75,
+    active: true,
+    sortOrder: 7,
+  },
+  {
+    id: 'aves',
+    name: 'Aves',
+    slug: 'aves',
+    description: 'Gaiolas, ninhos, farinhadas, sementes e acessórios para aves.',
+    imageUrl: '/assets/products/10-p-gaiola-aves-xmwpridi.jpg',
+    defaultMarginPercent: 60,
+    active: true,
+    sortOrder: 8,
+  },
+  {
+    id: 'roedores',
+    name: 'Roedores',
+    slug: 'roedores',
+    description: 'Gaiolas, fenos, rações, rodas silenciosas e abrigos para roedores.',
+    imageUrl: '/assets/products/12-p-gaiola-hamster-bp1gvqw-.jpg',
+    defaultMarginPercent: 60,
+    active: true,
+    sortOrder: 9,
+  },
+  {
+    id: 'peixes',
+    name: 'Peixes',
+    slug: 'peixes',
+    description: 'Aquários, filtros, termostatos, condicionadores e rações para peixes.',
+    imageUrl: '/assets/products/14-p-aquario-dfmyi_gj.jpg',
+    defaultMarginPercent: 60,
+    active: true,
+    sortOrder: 10,
+  },
+];
