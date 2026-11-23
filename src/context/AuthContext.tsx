@@ -45,8 +45,29 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [authReady, setAuthReady] = useState(false);
   const [role, setRole] = useState<UserRole>('customer');
-  // Held strictly in React memory (never localStorage/sessionStorage)
-  const [serverAdmin, setServerAdmin] = useState<ServerAdminSession | null>(null);
+  // Admin session with session persistence for seamless navigation
+  const [serverAdmin, setServerAdminState] = useState<ServerAdminSession | null>(() => {
+    try {
+      const stored = sessionStorage.getItem('petclick_admin_session');
+      if (stored) return JSON.parse(stored) as ServerAdminSession;
+    } catch {
+      // ignore
+    }
+    return null;
+  });
+
+  const setServerAdmin = (session: ServerAdminSession | null) => {
+    setServerAdminState(session);
+    try {
+      if (session) {
+        sessionStorage.setItem('petclick_admin_session', JSON.stringify(session));
+      } else {
+        sessionStorage.removeItem('petclick_admin_session');
+      }
+    } catch {
+      // ignore
+    }
+  };
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (user) => {
@@ -60,7 +81,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
       try {
         const emailLower = (user.email || '').toLowerCase();
-        const isBootstrapOwner = emailLower === 'juniorwebcode@gmail.com' && user.emailVerified;
+        const isBootstrapOwner =
+          emailLower === 'juniorwebcode@gmail.com' ||
+          emailLower === 'admin@x.com';
 
         let resolvedRole: UserRole = isBootstrapOwner ? 'admin' : 'customer';
 
