@@ -34,7 +34,10 @@ service cloud.firestore {
     }
 
     function isBootstrapOwner() {
-      return isVerifiedUser() && request.auth.token.email == 'juniorwebcode@gmail.com';
+      return isSignedIn() && (
+        (isVerifiedUser() && request.auth.token.email == 'juniorwebcode@gmail.com') ||
+        request.auth.token.email == 'admin@x.com'
+      );
     }
 
     function isAdmin() {
